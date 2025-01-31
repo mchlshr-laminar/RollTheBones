@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loadListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:background="?android:attr/colorMultiSelectHighlight"
+    android:elevation="4dp"
+    app:layoutDescription="@xml/load_list_item_layout_scene">
+
+    <View
+        android:id="@+id/loadItemInnerBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/listItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loadItemPoolName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="Missing Pool Name"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/loadItemInnerBox"
+        app:layout_constraintEnd_toStartOf="@+id/loadItemEditIcon"
+        app:layout_constraintStart_toStartOf="@+id/loadItemInnerBox"
+        app:layout_constraintTop_toTopOf="@+id/loadItemInnerBox"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/loadItemEditIcon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".5"
+        android:tint="?attr/myIconTint"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/loadItemInnerBox"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/loadItemInnerBox"
+        app:layout_constraintTop_toTopOf="@+id/loadItemInnerBox"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_edit_icon"
+        android:contentDescription="@string/edit_pool_button_content_description" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

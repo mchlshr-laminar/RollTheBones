@@ -1,0 +1,37 @@
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+  <path
+      android:pathData="M64,1.01V35.8m33.079,56.4h20.321m-106.8,0h20.321m66.158,0L64,127.029 30.921,92.2M64,35.8H117.4L97.079,92.2m-66.158,0 l-20.321,-56.4h53.4M117.4,92.2V35.8L64,1.01l-53.4,34.79v56.4l53.4,34.829z"
+      android:strokeAlpha="0.6"
+      android:strokeLineJoin="round"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="M92.944,85.15C84.674,71.05 76.405,56.95 68.135,42.85c-4.135,-7.05 -4.135,-7.05 -8.27,0 -8.27,14.1 -16.539,28.2 -24.809,42.3 -4.135,7.05 -4.135,7.05 4.135,7.05 16.539,0 33.079,0 49.618,0 8.27,0 8.27,0 4.135,-7.05z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:fillColor="?attr/myIconTint"
+      android:pathData="M64.284,85.007H50.393v-2.88q1.447,-1.24 2.894,-2.48 1.461,-1.24 2.715,-2.467 2.646,-2.563 3.624,-4.065 0.978,-1.516 0.978,-3.266 0,-1.599 -1.061,-2.494 -1.047,-0.91 -2.935,-0.91 -1.254,0 -2.715,0.441 -1.461,0.441 -2.853,1.35h-0.138v-2.894q0.978,-0.482 2.604,-0.882 1.64,-0.4 3.169,-0.4 3.156,0 4.947,1.53 1.791,1.516 1.791,4.12 0,1.171 -0.303,2.191 -0.289,1.006 -0.868,1.915 -0.537,0.854 -1.268,1.681 -0.717,0.827 -1.75,1.833 -1.474,1.447 -3.045,2.811 -1.571,1.35 -2.935,2.508h11.038z"
+      android:strokeWidth="0.264583"/>
+  <path
+      android:fillColor="?attr/myIconTint"
+      android:pathData="m77.965,74.74q0,5.526 -1.736,8.117 -1.723,2.577 -5.361,2.577 -3.693,0 -5.402,-2.618 -1.695,-2.618 -1.695,-8.048 0,-5.471 1.723,-8.075 1.723,-2.618 5.374,-2.618 3.693,0 5.388,2.66 1.709,2.646 1.709,8.006zM74.341,80.996q0.482,-1.116 0.648,-2.618 0.179,-1.516 0.179,-3.638 0,-2.095 -0.179,-3.638 -0.165,-1.543 -0.661,-2.618 -0.482,-1.061 -1.323,-1.599 -0.827,-0.537 -2.136,-0.537 -1.295,0 -2.15,0.537 -0.841,0.537 -1.337,1.626 -0.469,1.02 -0.648,2.66 -0.165,1.64 -0.165,3.597 0,2.15 0.152,3.597 0.152,1.447 0.648,2.591 0.455,1.075 1.282,1.64 0.841,0.565 2.219,0.565 1.295,0 2.15,-0.537 0.854,-0.537 1.323,-1.626z"
+      android:strokeWidth="0.264583"/>
+</vector>

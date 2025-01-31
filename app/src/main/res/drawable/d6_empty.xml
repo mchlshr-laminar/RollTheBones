@@ -1,0 +1,21 @@
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="m20,4h88c8.86,0 16,7.14 16,16v88c0,8.86 -7.14,16 -16,16L20,124c-8.86,0 -16,-7.14 -16,-16L4,20c0,-8.86 7.14,-16 16,-16z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="8"
+      android:strokeColor="#4d4d4d"
+      android:fillAlpha="0"/>
+</vector>

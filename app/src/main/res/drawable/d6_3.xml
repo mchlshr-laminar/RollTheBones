@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <group
+            android:translateX="-19.203125"
+            android:translateY="-64.895432">
+        <path
+            android:fillColor="?attr/myIconTint"
+            android:fillAlpha="0"
+            android:strokeColor="?attr/myIconTint"
+            android:strokeWidth="8"
+            android:strokeLineJoin="round"
+            android:pathData="M 39.203125 68.895432 L 127.203125 68.895432 Q 143.203125 68.895432 143.203125 84.895432 L 143.203125 172.895432 Q 143.203125 188.895432 127.203125 188.895432 L 39.203125 188.895432 Q 23.203125 188.895432 23.203125 172.895432 L 23.203125 84.895432 Q 23.203125 68.895432 39.203125 68.895432 Z" />
+    </group>
+    <path
+        android:fillColor="?attr/myIconTint"
+        android:strokeColor="?attr/myIconTint"
+        android:strokeLineJoin="round"
+        android:pathData="M 36 29.0000005 C 39.8659929727 29.0000005 42.9999995 32.1340070273 42.9999995 36 C 42.9999995 39.8659929727 39.8659929727 42.9999995 36 42.9999995 C 32.1340070273 42.9999995 29.0000005 39.8659929727 29.0000005 36 C 29.0000005 32.1340070273 32.1340070273 29.0000005 36 29.0000005 Z" />
+    <path
+        android:fillColor="?attr/myIconTint"
+        android:strokeColor="?attr/myIconTint"
+        android:strokeLineJoin="round"
+        android:pathData="M 63.999996 56.9999965 C 67.8659889727 56.9999965 70.9999955 60.1340030273 70.9999955 63.999996 C 70.9999955 67.8659889727 67.8659889727 70.9999955 63.999996 70.9999955 C 60.1340030273 70.9999955 56.9999965 67.8659889727 56.9999965 63.999996 C 56.9999965 60.1340030273 60.1340030273 56.9999965 63.999996 56.9999965 Z" />
+    <path
+        android:fillColor="?attr/myIconTint"
+        android:strokeColor="?attr/myIconTint"
+        android:strokeLineJoin="round"
+        android:pathData="M 91.999992 84.9999925 C 95.8659849727 84.9999925 98.9999915 88.1339990273 98.9999915 91.999992 C 98.9999915 95.8659849727 95.8659849727 98.9999915 91.999992 98.9999915 C 88.1339990273 98.9999915 84.9999925 95.8659849727 84.9999925 91.999992 C 84.9999925 88.1339990273 88.1339990273 84.9999925 91.999992 84.9999925 Z" />
+</vector>

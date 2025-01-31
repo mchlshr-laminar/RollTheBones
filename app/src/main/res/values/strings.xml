@@ -1,0 +1,129 @@
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="die_name_hint">Die Name</string>
+    <string name="results_entry_header">Results:</string>
+    <string name="min_result_entry_hint">Min</string>
+    <string name="results_entry_between_fields">to</string>
+    <string name="max_result_entry_hint">Max</string>
+    <string name="custom_die_save_button">Save</string>
+    <string name="die_face_selection_header">Die Faces</string>
+    <string name="die_has_no_faces_banner">Die has no faces</string>
+    <string name="faces_collapse_arrow_content_description">Custom Faces Section Collapse Arrow</string>
+    <string name="main_menu_pools_tab">Pools</string>
+    <string name="main_menu_dice_tab">Dice</string>
+    <string name="main_menu_new_item_button_content_description">New Item</string>
+    <string name="dice_drawer_drag_icon">Dice Drawer Drag Icon</string>
+    <string name="configuration_activity_toolbar_title">New Dice Pool</string>
+    <string name="rolling_activity_toolbar_title">Roll!</string>
+    <string name="die_type_image">Picture of Die Type</string>
+    <string name="custom_face_image_selection_label">Select Image</string>
+    <string name="default_face_image">Default face image for result %1$d</string>
+    <string name="custom_face_image">Custom face image for result %1$d</string>
+    <string name="custom_face_image_removal_button">Remove custom face image from result</string>
+    <string name="die_drawer_item_drag_handle">Drag and drop handle for die</string>
+    <string name="dice_pool_drag_handle">Drag and drop handle for dice pool</string>
+    <string name="dice_pool_type_icon">Dice pool type icon</string>
+    <string name="die_roll_result_content_description">Die roll result</string>
+    <string name="default_dice_drawer_header">Dice</string>
+    <string name="custom_dice_drawer_header">Additional Dice</string>
+    <string name="no_custom_dice_banner">No additional die types found</string>
+    <string name="no_custom_dice_sub_banner">You can build new types of dice from the main menu</string>
+    <string name="fixed_value_drawer_header">Fixed Values</string>
+    <string name="default_dice_collapse_arrow_content_description">Built-in dice drawer collapse icon</string>
+    <string name="custom_dice_collapse_arrow_content_description">Additional dice drawer collapse icon</string>
+    <string name="fixed_val_drawer_item_drag_handle">Drag and drop handle for fixed values</string>
+    <string name="fixed_val_drag_handle">Drag and drop handle for fixed value</string>
+    <string name="main_menu_dice_tab_empty_banner">No additional die types have been saved</string>
+    <string name="main_menu_dice_tab_empty_banner_advise_create">You can create new types of dice for your pools here</string>
+    <string name="main_menu_pools_tab_empty_banner">There are no saved dice pools</string>
+    <string name="main_menu_pools_tab_empty_banner_advise_create">Create a new pool to get started</string>
+    <string name="main_menu_pools_tab_list_content_description">saved pools</string>
+    <string name="pool_list_operator">Operator for list of dice pools</string>
+    <string name="pool_list_drag_handle">Drag and drop handle for dice pool list</string>
+    <string name="roll_button_content_description">Roll the pool</string>
+    <string name="edit_pool_button_content_description">Edit Pool Button</string>
+    <string name="missing_die_dialogue_name">Missing Die in Pool</string>
+    <string name="missing_die_dialogue_message">This pool contains a die type \"%1$s\" which does not exist.</string>
+    <string name="missing_die_dialogue_options_description">You can replace this with another die, or return to the menu.</string>
+    <string name="missing_die_dialogue_replacement_selection_header">Replace With:</string>
+    <string name="missing_die_dialogue_exit_button">Exit to Menu</string>
+    <string name="missing_die_dialogue_replace_die_button">Replace</string>
+    <string name="operator_selection_content_description">\"Operator %1$s\"</string>
+    <string name="popup_button_ok_no_action">OK</string>
+    <string name="popup_button_cancel_no_action">Cancel</string>
+    <string name="popup_button_save_item">Save</string>
+    <string name="popup_button_overwrite_existing_saved_item">Overwrite</string>
+    <string name="problem_loading_dice_popup_name">Problem Loading Dice</string>
+    <string name="problem_loading_dice_popup_button_delete_die">Delete Die</string>
+    <string name="problem_loading_dice_list_message">There was an issue loading saved die types: %1$s \nCustom die types were not loaded.</string>
+    <string name="problem_loading_dice_individual_message">There was an issue loading the saved die type \"%1$s\": %2$s\nThis die was not loaded.</string>
+    <string name="problem_deleting_dice_popup_name">Problem Deleting Die</string>
+    <string name="problem_deleting_dice_popup_message">There was an issue deleting the saved die type \"%1$s\": %2$s</string>
+    <string name="edit_custom_die_toolbar_title">Editing %1$s</string>
+    <string name="custom_die_activity_menu_discard_changes">Discard Changes</string>
+    <string name="popup_could_not_select_image_for_custom_face">Could not open photos</string>
+    <string name="popup_selected_custom_face_image_not_loaded">Could not load image</string>
+    <string name="popup_save_die_type_confirm_overwrite">There is already a die type saved as \"%1$s\"</string>
+    <string name="problem_saving_die_popup_name">Problem Saving Die</string>
+    <string name="problem_saving_die_popup_message">"An issue was encountered saving the die: %1$s</string>
+    <string name="die_validation_no_name">A name is required</string>
+    <string name="die_validation_no_minimun_result">A minimum value is required</string>
+    <string name="die_validation_specified_minimum_invalid">Invalid minimum value</string>
+    <string name="die_validation_no_maximum_result">A maximum value is required</string>
+    <string name="die_validation_specified_maximum_invalid">Invalid maximum value</string>
+    <string name="die_vallidation_min_above_max">The maximum value can\'t be less than the minimum</string>
+    <string name="custom_die_activity_menu_discard_new_die">Discard Die</string>
+    <string name="custom_die_activity_menu_delete_existing_die">Delete Die</string>
+    <string name="confirm_delete">Confirm Deletion</string>
+    <string name="roll_area_menu_save_pool">Save Pool</string>
+    <string name="roll_area_menu_load_pool_at_startup">Set as Startup Pool</string>
+    <string name="roll_area_menu_go_to_main_menu">Saved Pools and Dice</string>
+    <string name="rolling_activity_menu_edit_pool">Edit Pool</string>
+    <string name="custom_die_activity_toolbar_close_icon_content_description">Close</string>
+    <string name="activity_toolbar_cancel_deletion_icon_content_description">Cancel deletion</string>
+    <string name="activity_toolbar_go_to_main_menu_icon_content_description">Go to main menu</string>
+    <string name="custom_die_save_builtin_name">Cannot save a custom die with the name of a built-in die</string>
+    <string name="problem_deleting_items_popup_name">Problem Deleting Items</string>
+    <string name="dice_collective_noun">dice</string>
+    <string name="pools_collective_noun">pools</string>
+    <string name="problem_deleting_item_list_message">There was an issue updating the list of %1$s:</string>
+    <string name="problem_deleting_item_individual_message">There was an issue deleting some of the selected %1$s:</string>
+    <string name="problem_loading_pool_popup_name">Problem Loading Pool</string>
+    <string name="problem_loading_pool_popup_message">There was an issue loading the pool:</string>
+    <string name="save_pool_name_entry_popup_title">Save Pool As:</string>
+    <string name="save_pool_name_entry_hint">pool name</string>
+    <string name="problem_saving_pool_popup_name">Problem Saving Pool</string>
+    <string name="pool_validation_header">The pool could not be saved with that name:</string>
+    <string name="pool_validation_issue_no_name">The pool must have a name</string>
+    <string name="pool_validation_issue_illegal_char">The pool name contains an illegal character</string>
+    <string name="confirm_overwrite_pool_popup_name">Overwrite Pool?</string>
+    <string name="confirm_overwrite_pool_popup_message">A pool named \"%1$s\" already exists.</string>
+    <string name="problem_saving_pool_popup_message">There was an issue saving the pool:</string>
+    <string name="problem_saving_startup_pool_popup_message">There was an issue setting the startup pool:</string>
+    <string name="main_menu_dice_tab_list_content_description">saved custom dice</string>
+    <string name="rolling_activity_toolbar_alt_title">Re-roll?</string>
+    <plurals name="dice_deleted_text">
+        <item quantity="one">Deleted 1 die</item>
+        <item quantity="other">Deleted %1$d dice</item>
+    </plurals>
+    <plurals name="dice_selected_text">
+        <item quantity="one">1 die selected</item>
+        <item quantity="other">%1$d dice selected</item>
+    </plurals>
+    <plurals name="pools_deleted_text">
+        <item quantity="one">Deleted 1 pool</item>
+        <item quantity="other">Deleted %1$d pools</item>
+    </plurals>
+    <plurals name="pools_selected_text">
+        <item quantity="one">1 pool selected</item>
+        <item quantity="other">%1$d pools selected</item>
+    </plurals>
+</resources>

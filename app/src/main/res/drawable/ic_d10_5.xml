@@ -1,0 +1,33 @@
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+  <path
+      android:pathData="M1.539,82.8V45.2L64,1.01 126.461,45.2V82.8L64,126.839ZM64,110.054V126.839M25.519,89.103 L1.539,82.8m124.922,0 l-23.98,6.303"
+      android:strokeAlpha="0.6"
+      android:strokeLineJoin="round"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="m29.218,91.117 l30.784,16.76c3.998,2.177 3.998,2.177 7.999,-0.002L98.783,91.117c3.698,-2.014 3.698,-2.014 2.708,-4.281L66.173,5.984C64,1.01 64,1.01 61.826,5.987L28.256,82.837c-2.737,6.266 -2.737,6.266 0.962,8.28z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:fillColor="?attr/myIconTint"
+      android:pathData="m73.413,80.289q0,1.935 -0.707,3.702 -0.707,1.767 -1.935,2.977 -1.339,1.302 -3.2,2.009 -1.842,0.688 -4.279,0.688 -2.27,0 -4.372,-0.484 -2.102,-0.465 -3.553,-1.135v-3.925h0.26q1.525,0.967 3.572,1.656 2.046,0.67 4.018,0.67 1.321,0 2.549,-0.372 1.246,-0.372 2.214,-1.302 0.819,-0.8 1.228,-1.916 0.428,-1.116 0.428,-2.586 0,-1.432 -0.502,-2.418 -0.484,-0.986 -1.358,-1.581 -0.967,-0.707 -2.363,-0.986 -1.377,-0.298 -3.088,-0.298 -1.637,0 -3.163,0.223 -1.507,0.223 -2.604,0.446V61.387h16.669v3.256H60.149v7.367q0.8,-0.074 1.637,-0.112 0.837,-0.037 1.451,-0.037 2.251,0 3.944,0.391 1.693,0.372 3.107,1.339 1.488,1.023 2.307,2.642 0.819,1.619 0.819,4.056z"
+      android:strokeWidth="0.264583"/>
+</vector>

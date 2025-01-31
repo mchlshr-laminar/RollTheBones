@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/menuNoActionBar"></ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/menuShowActionBar">
+        <Constraint
+            android:id="@+id/mainMenuActionBar"
+            android:elevation="4dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/menuNoActionBar"
+        motion:constraintSetEnd="@+id/menuShowActionBar"
+        motion:duration="@android:integer/config_shortAnimTime" />
+    <Transition
+        motion:constraintSetStart="@+id/menuShowActionBar"
+        motion:constraintSetEnd="@+id/menuNoActionBar"
+        motion:duration="@android:integer/config_shortAnimTime" />
+</MotionScene>

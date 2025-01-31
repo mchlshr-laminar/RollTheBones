@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/beforeItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/itemArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/afterItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/itemTrailingOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tint="?attr/myIconTint"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_plus_sign"
+        android:contentDescription="@string/pool_list_operator" />
+</LinearLayout>

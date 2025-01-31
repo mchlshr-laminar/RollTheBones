@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DiceThing">
+        <activity android:name="com.Winebone.RollTheBones.MainMenuV2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Winebone.RollTheBones.CustomDieBuildingActivity" />
+        <activity android:name="com.Winebone.RollTheBones.RollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.Winebone.RollTheBones.PoolConfiguration" />
+    </application>
+
+    <!--
+        Copyright (c) 2021-2025 Michael Usher
+
+        This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a
+        copy of the MPL was not distributed with this file, You can obtain one at
+         https://mozilla.org/MPL/2.0/.
+    -->
+</manifest>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DieTypesDrawer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="64dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/drawerBuiltInDiceHeaderLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimarySurface"
+                    android:elevation="20dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/drawerBuiltInDiceCollapseIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:contentDescription="@string/default_dice_collapse_arrow_content_description"
+                        android:rotation="90"
+                        android:src="@drawable/ic_collapse_arrow"
+                        android:tint="?attr/colorOnPrimarySurface"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/drawerBuiltInDiceHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/default_dice_drawer_header"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnPrimarySurface"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/drawerBuiltInDiceCollapseIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/drawerBuiltInDiceArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:background="?attr/listBackground"
+                    android:fadeScrollbars="false"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/drawerBuiltInDiceLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/drawerDividerTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/drawerCustomDiceHeaderLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimarySurface"
+                    android:elevation="20dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/drawerCustomDiceCollapseIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:contentDescription="@string/custom_dice_collapse_arrow_content_description"
+                        android:src="@drawable/ic_collapse_arrow"
+                        android:tint="?attr/colorOnPrimarySurface"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/drawerCustomDiceHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/custom_dice_drawer_header"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnPrimarySurface"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/drawerCustomDiceCollapseIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/drawerCustomDiceContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <HorizontalScrollView
+                        android:id="@+id/drawerCustomDiceArea"
+                        android:layout_width="0dp"
+                        android:layout_height="192dp"
+                        android:background="?attr/listBackground"
+                        android:fadeScrollbars="false"
+                        android:fadingEdge="horizontal"
+                        android:fadingEdgeLength="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/drawerCustomDiceLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/drawerNoDiceBanner"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="?attr/emptyOverlayBackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/drawerNoDiceText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/no_custom_dice_banner"
+                            android:textAlignment="center"
+                            android:textColor="?attr/emptyOverlayTextColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@+id/drawerMakeDiceText"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_chainStyle="packed" />
+
+                        <TextView
+                            android:id="@+id/drawerMakeDiceText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/no_custom_dice_sub_banner"
+                            android:textAlignment="center"
+                            android:textColor="?attr/emptyOverlayTextColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/drawerNoDiceText" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/drawerDividerThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/drawerFixedNumHeaderLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimarySurface"
+                    android:elevation="20dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/drawerFixedNumCollapseIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:src="@drawable/ic_collapse_arrow"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/drawerFixedValHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/fixed_value_drawer_header"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnPrimarySurface"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/drawerFixedNumCollapseIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/fixedValBorder"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/pool_frag_outline"
+                        android:backgroundTint="?attr/myIconTint"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/borderRightAnchor"
+                        app:layout_constraintStart_toEndOf="@+id/borderLeftAnchor"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/borderLeftAnchor"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/fixedValDragHandle"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/fixedValDragHandle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_drag_handle_vertical"
+                        android:tint="?attr/myIconTint"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixedValBorder"
+                        app:layout_constraintEnd_toStartOf="@+id/fixedValInput"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/borderLeftAnchor"
+                        app:layout_constraintTop_toTopOf="@+id/fixedValBorder"
+                        android:contentDescription="@string/fixed_val_drawer_item_drag_handle" />
+
+                    <com.Winebone.RollTheBones.EditTextNoDrag
+                        android:id="@+id/fixedValInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:ems="2"
+                        android:inputType="numberSigned"
+                        android:maxLength="3"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="36sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixedValBorder"
+                        app:layout_constraintEnd_toStartOf="@+id/borderRightAnchor"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/fixedValDragHandle"
+                        app:layout_constraintTop_toTopOf="@+id/fixedValBorder"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:id="@+id/borderRightAnchor"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/fixedValInput"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/drawerLeftHangingBevel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="20dp"
+            android:scaleX="1.5"
+            android:src="@drawable/ic_hanging_bevel"
+            app:layout_constraintBottom_toBottomOf="@+id/drawerOpSelector"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintEnd_toStartOf="@+id/drawerOpSelector"
+            app:layout_constraintTop_toTopOf="@+id/drawerOpSelector"
+            app:tint="?attr/colorSecondary"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/drawerOpSelectorBackdrop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/drawerOpSelector"
+            app:layout_constraintEnd_toEndOf="@+id/drawerOpSelector"
+            app:layout_constraintStart_toStartOf="@+id/drawerOpSelector"
+            app:layout_constraintTop_toTopOf="@+id/drawerOpSelector" />
+
+        <Spinner
+            android:id="@+id/drawerOpSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:backgroundTint="?attr/colorOnSecondary"
+            android:elevation="20dp"
+            android:paddingVertical="4dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

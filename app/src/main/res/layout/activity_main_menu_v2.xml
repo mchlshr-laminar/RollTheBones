@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/listBackground"
+    android:theme="@style/Theme.DiceThing"
+    app:layoutDescription="@xml/activity_main_menu_v2_scene"
+    tools:context=".MainMenuV2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainMenuActionBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorPrimaryVariant"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.DiceThing.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.DiceThing.ActionBar.PopupMenu"
+        app:title="FAKE TITLE" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mainMenuTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuActionBar"
+        app:tabIndicatorAnimationMode="linear">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/menuPoolsTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_menu_pools_tab" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/menuDiceTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_menu_dice_tab" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:id="@+id/tabSwipeDetector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuTabs" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainMenuPoolsTabFragment"
+        android:name="com.Winebone.RollTheBones.MainMenuPoolsTabFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuTabs" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainMenuDiceTabFragment"
+        android:name="com.Winebone.RollTheBones.MainMenuDiceTabFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuTabs" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainMenuAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:fabCustomSize="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="32dp"
+        app:srcCompat="@drawable/ic_plus_sign"
+        android:contentDescription="@string/main_menu_new_item_button_content_description"
+        android:focusable="true" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RollingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rollingActivityToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.DiceThing.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationContentDescription="@string/activity_toolbar_go_to_main_menu_icon_content_description"
+        app:navigationIcon="@drawable/ic_menu_icon_white"
+        app:popupTheme="@style/Theme.DiceThing.ActionBar.PopupMenu"
+        app:title="@string/rolling_activity_toolbar_title" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/rollingRollFragContainer"
+        android:name="com.Winebone.RollTheBones.RollArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rollingActivityToolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/resultBevelLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleX="1.5"
+        android:tint="?attr/colorSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/resultText"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toStartOf="@+id/resultText"
+        app:layout_constraintTop_toTopOf="@+id/resultText"
+        app:srcCompat="@drawable/ic_hanging_bevel"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondary"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollingActivityToolbar"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/resultBevelRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleX="-1.5"
+        android:tint="?attr/colorSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/resultText"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintStart_toEndOf="@+id/resultText"
+        app:layout_constraintTop_toTopOf="@+id/resultText"
+        app:srcCompat="@drawable/ic_hanging_bevel"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

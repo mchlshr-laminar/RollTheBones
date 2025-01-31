@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="128dp"
+    android:layout_height="128dp"
+    android:layout_margin="4dp"
+    android:layout_weight="1"
+    android:background="@drawable/pool_frag_outline"
+    android:backgroundTint="?attr/myIconTint">
+
+    <ImageView
+        android:id="@+id/faceImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:alpha="0.5"
+        android:tint="?attr/myIconTint"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/faceValue"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_generic_die_outline"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/faceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/custom_face_image_selection_label"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/removeCustomFaceButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="#80FFFFFF"
+        android:backgroundTint="?android:attr/colorBackground"
+        android:tint="?attr/myIconTint"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_multiply_sign"
+        android:contentDescription="@string/custom_face_image_removal_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

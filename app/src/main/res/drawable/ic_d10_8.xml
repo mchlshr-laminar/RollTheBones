@@ -1,0 +1,33 @@
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+  <path
+      android:pathData="M1.539,82.8V45.2L64,1.01 126.461,45.2V82.8L64,126.839ZM64,110.054V126.839M25.519,89.103 L1.539,82.8m124.922,0 l-23.98,6.303"
+      android:strokeAlpha="0.6"
+      android:strokeLineJoin="round"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="m29.218,91.117 l30.784,16.76c3.998,2.177 3.998,2.177 7.999,-0.002L98.783,91.117c3.698,-2.014 3.698,-2.014 2.708,-4.281L66.173,5.984C64,1.01 64,1.01 61.826,5.987L28.256,82.837c-2.737,6.266 -2.737,6.266 0.962,8.28z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:fillColor="?attr/myIconTint"
+      android:pathData="m73.841,81.368q0,3.59 -2.809,5.972 -2.791,2.381 -7.032,2.381 -4.502,0 -7.181,-2.325 -2.66,-2.325 -2.66,-5.953 0,-2.307 1.339,-4.167 1.339,-1.879 3.777,-2.977v-0.112q-2.232,-1.191 -3.311,-2.604 -1.06,-1.414 -1.06,-3.535 0,-3.125 2.567,-5.209 2.567,-2.084 6.53,-2.084 4.149,0 6.623,1.991 2.474,1.991 2.474,5.06 0,1.879 -1.172,3.702 -1.172,1.805 -3.442,2.828L68.483,74.447q2.604,1.116 3.981,2.753 1.377,1.637 1.377,4.167zM69.432,67.843q0,-1.991 -1.544,-3.163 -1.525,-1.191 -3.907,-1.191 -2.344,0 -3.851,1.116 -1.488,1.116 -1.488,3.014 0,1.339 0.744,2.325 0.763,0.967 2.288,1.73 0.688,0.335 1.972,0.874 1.302,0.54 2.53,0.893 1.842,-1.228 2.549,-2.549 0.707,-1.321 0.707,-3.051zM70.009,81.721q0,-1.712 -0.763,-2.735 -0.744,-1.042 -2.939,-2.084 -0.874,-0.409 -1.916,-0.763 -1.042,-0.353 -2.772,-0.986 -1.674,0.912 -2.698,2.474 -1.005,1.563 -1.005,3.535 0,2.511 1.73,4.149 1.73,1.637 4.39,1.637 2.716,0 4.335,-1.395 1.637,-1.395 1.637,-3.832z"
+      android:strokeWidth="0.264583"/>
+</vector>

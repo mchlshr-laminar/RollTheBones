@@ -1,0 +1,33 @@
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+  <path
+      android:pathData="M64,1.01V35.8m33.079,56.4h20.321m-106.8,0h20.321m66.158,0L64,127.029 30.921,92.2M64,35.8H117.4L97.079,92.2m-66.158,0 l-20.321,-56.4h53.4M117.4,92.2V35.8L64,1.01l-53.4,34.79v56.4l53.4,34.829z"
+      android:strokeAlpha="0.6"
+      android:strokeLineJoin="round"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="M92.944,85.15C84.674,71.05 76.405,56.95 68.135,42.85c-4.135,-7.05 -4.135,-7.05 -8.27,0 -8.27,14.1 -16.539,28.2 -24.809,42.3 -4.135,7.05 -4.135,7.05 4.135,7.05 16.539,0 33.079,0 49.618,0 8.27,0 8.27,0 4.135,-7.05z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="?attr/myIconTint"
+      android:strokeLineCap="butt"/>
+  <path
+      android:fillColor="?attr/myIconTint"
+      android:pathData="m71.607,79.233h-3.045v5.774h-2.646v-5.774h-9.825v-3.169l9.936,-11.576h2.536v12.54h3.045zM65.915,77.028L65.915,67.767l-7.951,9.26z"
+      android:strokeWidth="0.264583"/>
+</vector>

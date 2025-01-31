@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="listBackground" format="reference" />
+    <attr name="myIconTint" format="reference" />
+    <attr name="listItemBackground" format="reference" />
+    <attr name="emptyOverlayBackground" format="reference" />
+    <attr name="emptyOverlayTextColor" format="color" />
+</resources>

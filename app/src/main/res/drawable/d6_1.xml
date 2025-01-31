@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (c) 2021-2025 Michael Usher
+*
+* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
+* the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <group
+            android:translateX="-19.203125"
+            android:translateY="-64.895432">
+        <path
+            android:fillColor="?attr/myIconTint"
+            android:fillAlpha="0"
+            android:strokeColor="?attr/myIconTint"
+            android:strokeWidth="8"
+            android:strokeLineJoin="round"
+            android:pathData="M 39.203125 68.895432 L 127.203125 68.895432 Q 143.203125 68.895432 143.203125 84.895432 L 143.203125 172.895432 Q 143.203125 188.895432 127.203125 188.895432 L 39.203125 188.895432 Q 23.203125 188.895432 23.203125 172.895432 L 23.203125 84.895432 Q 23.203125 68.895432 39.203125 68.895432 Z" />
+    </group>
+    <path
+        android:fillColor="?attr/myIconTint"
+        android:strokeColor="?attr/myIconTint"
+        android:strokeLineJoin="round"
+        android:pathData="M 63.999996 56.9999965 C 67.8659889727 56.9999965 70.9999955 60.1340030273 70.9999955 63.999996 C 70.9999955 67.8659889727 67.8659889727 70.9999955 63.999996 70.9999955 C 60.1340030273 70.9999955 56.9999965 67.8659889727 56.9999965 63.999996 C 56.9999965 60.1340030273 60.1340030273 56.9999965 63.999996 56.9999965 Z" />
+</vector>
